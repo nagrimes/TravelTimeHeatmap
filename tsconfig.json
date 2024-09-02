@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",                       // Specify ECMAScript target version
+    "module": "esnext",                    // Use ES module syntax
+    "moduleResolution": "node",            // Resolve modules similar to Node.js
+    "strict": true,                        // Enable all strict type-checking options
+    "esModuleInterop": true,               // Enable interop between CommonJS and ES Modules
+    "allowSyntheticDefaultImports": true,  // Allow default imports from modules with no default export
+    "skipLibCheck": true,                  // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",                    // Redirect output structure to the `dist` folder
+    "rootDir": "./Backend",                // Specify the root directory of input files
+    "resolveJsonModule": true,             // Include modules for JSON import
+    "baseUrl": ".",                        // Base directory to resolve non-relative modules
+    "paths": {
+      "@config/*": ["src/config/*"],       // Add path alias for config directory
+      "@routes/*": ["src/routes/*"],       // Add path alias for routes directory
+      "@controllers/*": ["src/controllers/*"]  // Add path alias for controllers directory
+    }
+  },
+  "include": ["Backend/**/*.ts"],          // Include all TypeScript files in Backend directory
+  "exclude": ["node_modules"]
+}

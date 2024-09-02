@@ -1,0 +1,5 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Start Server" type="NodeJSConfigurationType" node-parameters="--require ts-node/register --inspect --max-old-space-size=4096" path-to-js-file="dist/server.js" typescript-loader="bundled" working-dir="$PROJECT_DIR$">
+    <method v="2" />
+  </configuration>
+</component>
